@@ -4,53 +4,43 @@ function App() {
 
   return (
     <>
-      <div className="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+    <div className="navbar bg-base-100 shadow-sm">
+  <div className="flex-1">
+    <a className="btn btn-ghost text-xl">TISEPSE</a>
+  </div>
+  <div className="flex-none">
+    <ul className="menu menu-horizontal px-1">
+      <li><a>Link</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul className="bg-base-100 rounded-t-none p-2">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
+
+     <div className="flex justify-center items-center">
+  <div className="card bg-base-100 w-96 shadow-sm border border-secondary">
+    <figure>
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        alt="Les chaussures zbi" />
+    </figure>
+    <div className="card-body">
+      <h2 className="card-title">Card Title</h2>
+      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div className="card-actions justify-end">
+        <button className="btn btn-primary">Buy Now</button>
+      </div>
     </div>
   </div>
 </div>
 
-<div className="chat chat-start">
-  <div className="chat-image avatar">
-    <div className="w-10 rounded-full">
-      <img
-        alt="Tailwind CSS chat bubble component"
-        src="https://img.daisyui.com/images/profile/demo/kenobee@192.webp"
-      />
-    </div>
-  </div>
-  <div className="chat-header">
-    Obi-Wan Kenobi
-    <time className="text-xs opacity-50">12:45</time>
-  </div>
-  <div className="chat-bubble">You were the Chosen One!</div>
-  <div className="chat-footer opacity-50">Delivered</div>
-</div>
-<div className="chat chat-end">
-  <div className="chat-image avatar">
-    <div className="w-10 rounded-full">
-      <img
-        alt="Tailwind CSS chat bubble component"
-        src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp"
-      />
-    </div>
-  </div>
-  <div className="chat-header">
-    Anakin
-    <time className="text-xs opacity-50">12:46</time>
-  </div>
-  <div className="chat-bubble">I hate you!</div>
-  <div className="chat-footer opacity-50">Seen at 12:46</div>
-</div>
     </>
   )
 }
